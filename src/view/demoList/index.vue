@@ -1,6 +1,6 @@
 <template>
-    <el-table :data="tableData" style="width: 100%">
-        <el-table-column fixed="left" prop="ID" label="ID" width="60" />
+    <el-table :data="tableData" stripe style="width: 100%">
+        <el-table-column fixed="left" prop="ID" label="ID" width="100" />
         <el-table-column prop="date" label="日期" width="120" />
         <el-table-column prop="title" label="标题" width="150" />
         <el-table-column prop="tag" label="标签" width="150">
@@ -8,14 +8,14 @@
                 <el-tag v-if="scope.row.tag != ''" size="normal" effect="dark">{{ scope.row.tag }}</el-tag>
             </template>
         </el-table-column>
-        <el-table-column prop="link" label="链接" width="200">
+        <el-table-column prop="link" label="预览" width="200">
             <template #default="scope">
                 <el-link type="primary" :underline="false" :href=[scope.row.link] target="_blank">{{ scope.row.link
                 }}</el-link>
 
             </template>
         </el-table-column>
-        <el-table-column prop="link" label="链接" width="200">
+        <el-table-column prop="link" label="下载链接" width="200">
             <template #default="scope">
                 <el-link type="primary" :underline="false" :href=[scope.row.Download] target="_blank">{{ scope.row.Download
                 }}</el-link>
@@ -117,4 +117,5 @@ let tableData = reactive([
     },
 
 ])
+let demoNumber = tableData.length
 </script>
