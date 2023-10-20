@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+div {
+    width: 100%;
+    height: 100%;
+}
+
+.bg1 {
+    background-image: url(./img/bg1.png);
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.bg2 {
+    background-image: url(./img/bg2.png);
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.bg3 {
+    background-image: url(./img/bg3.png);
+    background-position: center;
+    background-attachment: fixed;
+}
+
+p {
+    height: 100px;
+    width: 100%;
+    background-color: rgba(123, 123, 123, 0.5);
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    font-size: 24px;
+}
