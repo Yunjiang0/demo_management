@@ -28,7 +28,7 @@ const routes = [
 
 const router = createRouter({
     history: createWebHashHistory(),
-    routes: routes,
+    routes,
 })
 
 // 全局路由拦截器
