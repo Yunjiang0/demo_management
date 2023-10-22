@@ -5,3 +5,5 @@ import { router as router } from './router'
 
 const app = createApp(App);
 app.use(router).mount('#app')
+import 'element-plus/theme-chalk/dark/css-vars.css'
+
