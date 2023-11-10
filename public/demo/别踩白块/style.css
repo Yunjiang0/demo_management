@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.wrap {
+  background-image: url();
+  width: 400px;
+  height: 600px;
+  margin: 5px auto;
+  border: 1px solid #222222;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* .none {
+  width: 100%;
+  height: 20%;
+  background-color: #000000;
+} */
+
+.topplate {
+  width: 400px;
+  height: 50px;
+  border: 3px solid black;
+  margin-left: 565px;
+  position: relative;
+  margin-top: 20px;
+  border-radius: 20px;
+  display: none;
+
+}
+
+.char,
+.count {
+  width: 180px;
+  height: 5px;
+  /* background-color: #000000; */
+  position: absolute;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: right;
+
+}
+
+.pause {
+  background-image: url(暂停.png);
+  background-size: 40px;
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 310px;
+  top: 6px;
+
+}
+
+.char {
+  left: 5px;
+}
+
+.count {
+  left: 19px;
+  top: 1px;
+}
+
+.title1 {
+  width: 400px;
+  position: absolute;
+  top: 120px;
+  text-align: center;
+  color: #000000;
+  left: 20px;
+
+}
+
+.title2 {
+  width: 400px;
+  position: absolute;
+  top: 120px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.wrap button {
+  padding: 0;
+  background-color: black;
+  outline: none;
+  width: 200px;
+  vertical-align: top;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  height: 50px;
+  font-size: 30px;
+  background: #000000;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -100px;
+  cursor: pointer;
+  z-index: 999;
+  color: rgb(255, 255, 255);
+}
+
+.black1 {
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: right;
+  line-height: 300px;
+  font-size: 45px;
+}
+
+.black2 {
+  left: 200px;
+  top: 300px;
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  background-color: #000000;
+}
+
+.black3 {
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  left: 200px;
+  text-align: left;
+  line-height: 300px;
+  font-size: 45px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  background-image: url(钢琴-01.png);
+  position: absolute;
+  top: 250px;
+  left: 150px;
+  background-size: 100px;
+  border: 2px solid black;
+  border-radius: 100px;
+
+}
+
+.main {
+  width: 400px;
+  height: 600px;
+  position: absolute;
+  top: -150px;
+}
+
+.restart {
+  /* padding: 0;
+  background-color: black;
+  height: 50px;
+  width: 200px;
+  text-align: center;
+  line-height: 50px;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  font-size: 25px;
+  background: #000000;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -100px;
+  color: rgb(255, 255, 255);
+  display: none; */
+  background-image: url(重新开始.png);
+  background-size: 40px;
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 360px;
+  top: 6px;
+
+}
+
+.row {
+  height: 150px;
+
+}
+
+.row div {
+  width: 100px;
+  height: 150px;
+  box-sizing: border-box;
+  border-left: 1px solid #222222;
+  border-bottom: 1px solid #222;
+  float: left;
+  cursor: pointer;
+}
+
+.color {
+  background: rgb(0, 0, 0);
+}

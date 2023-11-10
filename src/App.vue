@@ -3,12 +3,12 @@
   <el-container>
     <el-header>
       <el-menu default-active="2" class="el-menu-demo" mode="horizontal" :ellipsis="false">
-        <el-menu-item index="0">
-          logo
+        <el-menu-item index="0" style="border: none;">
+          <img class="logo" src="../public/咖啡.svg" alt="">
         </el-menu-item>
         <div class="flex-grow" />
-        <el-menu-item @click="toRescue('https://www.baidu.com/')" index="1">导航主站</el-menu-item>
-        <el-menu-item index="2">demo管理</el-menu-item>
+        <el-menu-item @click="toRescue('http://43.143.225.216/')" index="1">导航主站</el-menu-item>
+        <el-menu-item @click="toRescue('http://43.143.225.216:5736')" index="2">demo管理</el-menu-item>
         <el-menu-item index="3">
           <span @click.stop="toggleDark()">暗黑模式</span>
           <el-switch size="small" v-model="isDark" />
@@ -131,5 +131,9 @@ function toRescue(url) {
 
 .flex-grow {
   flex-grow: 1
+}
+
+.logo {
+  height: 50px;
 }
 </style>

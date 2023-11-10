@@ -5,7 +5,8 @@
         <el-table-column prop="title" label="标题" width="150" />
         <el-table-column prop="tag" label="标签" width="150">
             <template #default="scope">
-                <el-tag v-if="scope.row.tag != ''" size="normal" effect="dark">{{ scope.row.tag }}</el-tag>
+                <el-tag :type="scope.row.type" v-if="scope.row.tag != ''" size="normal" effect="dark">{{ scope.row.tag
+                }}</el-tag>
             </template>
         </el-table-column>
         <el-table-column prop="link" label="预览" width="200">
@@ -115,7 +116,41 @@ let tableData = reactive([
         link: '/demo/昼夜交替效果/index.html',
         Download: '/demo/昼夜交替效果/index.zip',
     },
-
+    {
+        ID: '12',
+        date: '2023-10-24',
+        title: '3D盒子',
+        tag: '课堂练习',
+        link: '/demo/3D盒子/index.html',
+        Download: '/demo/3D盒子/index.zip',
+    },
+    {
+        ID: '13',
+        date: '2023-11-09',
+        title: '别踩白块',
+        tag: '别踩白块',
+        type: 'success',
+        link: '/demo/别踩白块/index.html',
+        Download: '/demo/别踩白块/index.zip',
+    },
+    {
+        ID: '14',
+        date: '2023-11-09',
+        title: '贪吃蛇',
+        tag: '贪吃蛇',
+        type: 'success',
+        link: '/demo/贪吃蛇/index.html',
+        Download: '/demo/贪吃蛇/index.zip',
+    },
+    {
+        ID: '15',
+        date: '2023-11-09',
+        title: '汤姆猫',
+        tag: '汤姆猫',
+        type: 'success',
+        link: '/demo/汤姆猫/index.html',
+        Download: '/demo/汤姆猫/index.zip',
+    },
 ])
 let demoNumber = tableData.length
 </script>

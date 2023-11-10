@@ -1,0 +1,58 @@
+.main {
+  width: 444px;
+  height: 775px;
+}
+.cat {
+  width: 100%;
+  height: 100%;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+}
+img {
+  position: absolute;
+}
+.cymbal,
+.drink,
+.eat {
+  left: 5%;
+  width: 20%;
+}
+.fart,
+.pie,
+.scratch {
+  right: 5%;
+  width: 20%;
+}
+.eat,
+.scratch {
+  bottom: 20%;
+}
+.drink,
+.pie {
+  bottom: 30%;
+}
+.cymbal,
+.fart {
+  bottom: 40%;
+}
+.footLeft {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border-radius: 50%;
+  /* 设置标签的透明度 */
+  opacity: 0;
+  top: 91%;
+  left: 38%;
+}
+.footRight {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border-radius: 50%;
+  top: 91%;
+  left: 55%;
+  opacity: 0;
+}
